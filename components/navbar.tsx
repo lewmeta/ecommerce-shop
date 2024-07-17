@@ -5,13 +5,11 @@ import MainNav from '@/components/main-nav'
 import getCategories from '@/actions/get-categories'
 import NavarbarActions from './navbar-actions'
 
-type Props = {}
+// export const revalidate = 0;
 
-export const revalidate = 0;
+const Navbar = async () => {
 
-const Navbar = async (props: Props) => {
-
-    const categories = await getCategories();
+    // const categories = await getCategories();
     return (
         <div>
             <Container>
@@ -21,7 +19,7 @@ const Navbar = async (props: Props) => {
                             Store
                         </p>
                     </Link>
-                    <MainNav data={categories} />
+                    {/* <MainNav data={categories} /> */}
                     <NavarbarActions />
                 </div>
             </Container>
