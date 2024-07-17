@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ data }) => {
     const previewModal = usePreviewModal();
 
     const handleClick = () => {
-        router.push(`/product/${data.id}`)
+        router.push(`/product/${data?.id}`)
     }
 
     const onPreview: MouseEventHandler<HTMLButtonElement> = (event) => {
