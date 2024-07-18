@@ -10,7 +10,6 @@ const HomePage = async () => {
     const products = await getProducts({ isFeatured: true })
     const billboard = await getBillboard();
     const billboardId = billboard[0]
-    console.log("Billboards:", billboardId)
 
     return (
         <Container>

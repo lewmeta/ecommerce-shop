@@ -17,7 +17,6 @@ const ProductList: React.FC<ProductListProps> = ({ title, items }) => {
                     <ProductCard
                         key={item?.id}
                         data={item}
-
                     />
                 ))}
             </div>
