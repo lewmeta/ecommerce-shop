@@ -20,7 +20,7 @@ const NavarbarActions = () => {
     }
 
     return (
-        <div className="ml-auto pr-6 md:pr-0 flex items-center gap-x-4">
+        <div className="ml-auto pr-4 md:pr-0 flex items-center gap-x-4">
             <Button
                 onClick={() => router.push("/cart")}
                 className="flex items-center rounded-full bg-black px-4 py-2"
