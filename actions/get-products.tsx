@@ -1,8 +1,8 @@
 import { Product } from "@/types";
 import qs from "query-string";
-import axios from "axios";
 
-const URL = "https://nowmart-admin.vercel.app/api/09f8f239-bde2-4ae0-ac19-26fd18f5a311/products";
+const URL = `${process.env.NEXT_PUBLIC_API_URL}/products`;
+
 
 interface Query {
     categoryId?: string;
